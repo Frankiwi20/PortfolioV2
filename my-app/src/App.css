@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF; /* White */
+  color: #000000; /* Black */
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background: linear-gradient(90deg, #1A237E, #512DA8); /* Gradient from Blue to Purple */
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1565C0; /* Darker Blue */
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 50px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.05);
+}
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  /*background-image: url("project-background.jpg"); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+
+a {
+  color: #1E88E5; /* Bright Blue */
+}
+
+a:hover {
+  color: #1565C0; /* Darker Blue */
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0;
+}
