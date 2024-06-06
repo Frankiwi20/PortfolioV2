@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 
 const projects = [
     {
@@ -13,23 +14,41 @@ const projects = [
         link: 'https://github.com/Frankiwi20/Ray-Caster-Project',
         icon: 'fas fa-laptop-code'
     },
+    {
+      title:'Image Classification Project',
+      Description:'bloop' ,
+      link: '',
+       icon: 'fas fa-laptop-code'
+    },
+    {
+        title:'My Portfolio',
+        Description:'Portfolio created using React' ,
+        link: '',
+        icon: 'fas fa-laptop-code'
+    }
     // Add more projects as needed
 ];
 
 function Projects() {
     return (
-        <section id="projects" className="section">
-            <h2>Projects</h2>
-            {projects.map((project, index) => (
-                <div key={index} className="project">
-                    <i className={project.icon}></i>
-                    <h3 className="project-title">{project.title}</h3>
-                    <p>{project.description}</p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-            ))}
-        </section>
+        <div className="projects-container">
+
+            <div className="content-wrapper">
+                <section id="projects" className="projects-section">
+                    <h2 id='proj-header'>Projects</h2>
+                    {projects.map((project, index) => (
+                        <div key={index} className="project">
+                            <i className={project.icon}></i>
+                            <h3 className="project-title">{project.title}</h3>
+                            <p className='proj-para'>{project.description}</p>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                        </div>
+                    ))}
+                </section>
+            </div>
+        </div>
     );
 }
 
 export default Projects;
+

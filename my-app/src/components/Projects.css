@@ -1,0 +1,82 @@
+.projects-container {
+    position: relative; /* Ensure the container is relative for positioning the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the container covers the full viewport height */
+    overflow: hidden; /* Ensure any overflow content is hidden */
+}
+
+.proj-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust this value to make the image wider */
+    height: 100%; /* Adjust this value to make the image taller */
+    max-width: none; /* Remove the max-width constraint */
+    max-height: none; /* Remove the max-height constraint */
+    z-index: 0; /* Ensure the image is behind the content */
+}
+
+
+.content-wrapper {
+    max-width: 50%; /* Control the max width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding around the content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the background image */
+}
+
+.projects-section {
+    padding: 50px;
+    margin: 20px;
+    background: linear-gradient(19deg, rgba(33, 212, 253, 0.5), rgba(183, 33, 255, 0.5)); /* Gradient from blue to purple with opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects-section:hover {
+    transform: scale(1.05);
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    background: linear-gradient(19deg, rgba(33, 212, 253, 0.8), rgba(183, 33, 255, 0.8)); /* Gradient from blue to purple with opacity *//* Semi-transparent white */
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+a {
+    color: #0D47A1; /* Bright Blue */
+}
+
+a:hover {
+    color: #003366; /* Darker Blue */
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+    color:white;
+
+}
+#proj-header{
+    color:white;
+}
+.proj-para{
+    color:white;
+    font-size:18px;
+    font-family:Roboto;
+}
