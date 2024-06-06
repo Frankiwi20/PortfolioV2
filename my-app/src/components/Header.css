@@ -5,6 +5,7 @@
     border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space between elements */
 }
 
 .menu-btn {
@@ -18,4 +19,17 @@
 
 .menu-btn:focus {
     outline: none;
+}
+
+.home-btn {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust this to position it on the right */
+}
+
+.home-btn:hover {
+    color: #ccc; /* Lighter color on hover */
 }

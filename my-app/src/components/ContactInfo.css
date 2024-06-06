@@ -1,7 +1,7 @@
 .contact-container {
     padding: 30px; /* Increase padding for a more spacious feel */
     margin: 40px auto; /* Increase margin for more space around the container */
-    background-color: #ffffff;
+    background: linear-gradient(19deg, rgba(33, 212, 253, 0.5), rgba(183, 33, 255, 0.5)); /* Gradient from blue to purple with opacity */
     border-radius: 12px; /* Increase border radius for a softer look */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increase box shadow for more depth */
     max-width: 800px; /* Increase max-width for a larger container */
@@ -35,7 +35,8 @@
 
 .contact-item span {
     font-weight: bold; /* Bold labels for emphasis */
-    color: #555; /* Medium gray for labels */
+    color: white;
+
 }
 
 .contact-item a {
@@ -47,4 +48,12 @@
 .contact-item a:hover {
     color: #003366; /* Even Darker Blue */
     text-decoration: underline;
+}
+.contact-para{
+    color:white;
+    font-size:25px;
+    font-family:Roboto;
+}
+.contact-header{
+    font-size:40px;
 }

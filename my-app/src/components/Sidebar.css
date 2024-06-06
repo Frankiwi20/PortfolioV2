@@ -1,14 +1,16 @@
+/* Sidebar.css */
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 230px; /* Reduced width to avoid overlap with close button */
     height: 100%;
-    background: #333;
+    background: linear-gradient(19deg, rgba(183, 33, 255, 0.7), rgba(33, 212, 253, 0.7)); /* Gradient from purple to blue with opacity */
     color: white;
     overflow: hidden;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure the sidebar is on top */
 }
 
 .sidebar.open {
@@ -18,21 +20,24 @@
 .sidebar .close-btn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 10px; /* Adjust to ensure it stays visible */
     background: none;
     border: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
+    z-index: 1010; /* Ensure it's above the menu items */
 }
 
 .sidebar nav a {
     display: block;
-    padding: 20px;
+    padding: 15px; /* Adjust padding to fit reduced width */
     color: white;
     text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .sidebar nav a:hover {
-    background: #444;
+    background: rgba(74, 0, 114, 0.5); /* Dark purple with opacity for better contrast */
+    color: #fff; /* Ensures text remains readable */
 }

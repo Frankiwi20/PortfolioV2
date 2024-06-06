@@ -5,8 +5,8 @@ function ContactInfo() {
     return (
         <section id="contact" className="cont-section">
             <div className="contact-container">
-                <h2>Contact</h2>
-                <p>Feel free to contact me and check out my LinkedIn + Github pages.</p> <br/>
+                <h2 className="contact-header">Contact</h2>
+                <p className="contact-para">Feel free to contact me and check out my LinkedIn + Github pages.</p> <br/>
                 <div className="contact-item">
                     <span>Email: </span>
                     <a href="mailto:fmurcia1@toromail.csudh.edu">fmurcia1@toromail.csudh.edu</a>
