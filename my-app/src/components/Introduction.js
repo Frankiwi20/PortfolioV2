@@ -1,11 +1,12 @@
 import React from 'react';
-
+import './Introduction.css';
 function Introduction() {
     return (
-        <section id="introduction" className="section">
-            <h2>About Me</h2>
-            <img src="/Screenshot_20240531_173935_Gallery.jpg)" alt="Frankie Murcia" style={{ borderRadius: '50%', width: '150px', height: '150px' }} />
-            <p>Hello! I'm Frankie Murcia, a passionate developer with experience in React,
+        <section id="introduction" className="intro-section">
+
+            <img src="/Screenshot_20240531_173935_Gallery.jpg" alt="Frankie" className="profile-picture"/>
+
+            <p className="intro-para">Hello! I'm Frankie Murcia, a passionate developer with experience in React,
                 Node.js, and other modern web technologies,i'm also a recent graduate from
                 California State University, Dominguez Hills (CSUDH) with a Bachelor of Science in Computer Science.
                 Fluent in Spanish, I'm passionate about creating equitable and inclusive experiences on the web.
