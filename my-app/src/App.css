@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(90deg, #1A237E, #512DA8) ;/* White */
+  background: linear-gradient(19deg, rgba(74, 0, 114, 0.5), rgba(33, 212, 253, 0.5)); /* Reversed gradient with darker purple */
   color: #000000; /* Black */
+  height: 100vh;
 }
 
 .App {
@@ -11,7 +12,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(90deg, #1A237E, #512DA8); /* Gradient from Blue to Purple */
+  background: linear-gradient(19deg, rgba(183, 33, 255, 0.5), rgba(33, 212, 253, 0.5)); /* Reversed gradient from purple to blue with opacity */
   padding: 20px;
   color: white;
   border-bottom: 1px solid #ccc;

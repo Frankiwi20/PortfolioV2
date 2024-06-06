@@ -1,26 +1,50 @@
 .contact-container {
-    padding: 20px;
-    margin: 20px auto;
+    padding: 30px; /* Increase padding for a more spacious feel */
+    margin: 40px auto; /* Increase margin for more space around the container */
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    border-radius: 12px; /* Increase border radius for a softer look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increase box shadow for more depth */
+    max-width: 800px; /* Increase max-width for a larger container */
+    min-width: 400px; /* Ensure the container doesn’t get too small */
+    max-height:1000px;
+    min-height:600px;
     text-align: left;
 }
 
 .contact-container h2 {
     margin-top: 0;
+    text-align: center; /* Center the header */
 }
 
 .contact-container p {
-    margin: 10px 0;
+    margin: 15px 0; /* Increase margin for better spacing */
+    text-align: center; /* Center the introductory text */
 }
 
-.contact-container a {
-    color: #1E88E5; /* Bright Blue */
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px; /* Increase padding for more space between items */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
 }
 
-.contact-container a:hover {
-    color: #1565C0; /* Darker Blue */
+.contact-item:last-child {
+    border-bottom: none; /* Remove the last item's bottom border */
+}
+
+.contact-item span {
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #555; /* Medium gray for labels */
+}
+
+.contact-item a {
+    color: #0D47A1; /* Dark Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #003366; /* Even Darker Blue */
     text-decoration: underline;
 }
