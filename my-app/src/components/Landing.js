@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Landing.css';
-import ProjectPreview from './ProjectPreview';
 
 function Landing() {
     const navigate = useNavigate();
@@ -19,10 +18,10 @@ function Landing() {
                     <h2>About Me</h2>
                 </div>
                 <div className="grid-item" onClick={() => handleNavigation('/projects')}>
-                    <ProjectPreview text="My Projects" />
+                    <h2>My Projects</h2>
                 </div>
                 <div className="grid-item" onClick={() => handleNavigation('/contact')}>
-                    <h2>Contact</h2> {/* Corrected Link */}
+                    <h2>Get in Touch!</h2>
                 </div>
             </div>
         </div>

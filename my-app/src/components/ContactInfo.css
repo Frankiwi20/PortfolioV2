@@ -40,7 +40,7 @@
 }
 
 .contact-item a {
-    color: #0D47A1; /* Dark Blue */
+    color: white; /* Dark Blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }

@@ -1,14 +1,40 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './Introduction.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function Introduction() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true
+    };
+
+    const images = [
+        '/Screenshot_20240531_173935_Gallery.jpg',
+        '/image2.jpg',
+        '/image3.jpg'
+        // Add more image paths as needed
+    ];
+
     return (
         <section id="introduction" className="intro-section">
-
-            <img src="/Screenshot_20240531_173935_Gallery.jpg" alt="Frankie" className="profile-picture"/>
-
-            <p className="intro-para">Hello! I'm Frankie Murcia, a passionate developer with experience in React,
-                Node.js, and other modern web technologies,i'm also a recent graduate from
-                California State University, Dominguez Hills (CSUDH) with a Bachelor of Science in Computer Science.
+            <Slider {...settings}>
+                {images.map((src, index) => (
+                    <div key={index}>
+                        <img src={src} alt={`Slide ${index}`} className="profile-picture"/>
+                    </div>
+                ))}
+            </Slider>
+            <p className="intro-para">
+                Hello! I'm Frankie Murcia, a passionate developer with experience in React, Node.js, and other modern web technologies.
+                I'm also a recent graduate from California State University, Dominguez Hills (CSUDH) with a Bachelor of Science in Computer Science.
                 Fluent in Spanish, I'm passionate about creating equitable and inclusive experiences on the web.
 
                 Currently, I'm deeply engaged in two impactful projects. Firstly, I'm part of a team focused on
@@ -24,9 +50,8 @@ function Introduction() {
 
                 In my free time, I enjoy rock climbing, rollerblading, and spending time plane spotting with my 10-year-old son.
                 I'm excited to connect and explore how I can contribute my expertise in computer science, UX Design,
-                and machine learning to make a positive impact in the digital space..</p>
-
-
+                and machine learning to make a positive impact in the digital space.
+            </p>
         </section>
     );
 }

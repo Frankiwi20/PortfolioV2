@@ -4,29 +4,43 @@
     box-sizing: border-box;
 }
 
-.profile-picture{
-    width:370px;
-    height:700px;
-    border-radius:20px 20px;
-    position:relative;
-    margin:20px;
-
+.intro-section {
+    background: linear-gradient(180deg, #4A0072 0%, #00BFFF 100%);
+    padding: 20px;
 }
-.intro-section{
-    background: linear-gradient(90deg, #1A237E, #512DA8)
 
+.profile-picture {
+    width: 370px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
 }
-.intro-para{
-    color:white;
-    font-family:roboto;
-    font-size:20px;
-    position:relative;
 
+.intro-para {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
 }
-.header-intro{
-    color:white;
-    font-size:40px;
-    position:relative;
-    top:-20px;
+
+.header-intro {
+    color: white;
+    font-size: 40px;
     margin-top: 0;
+    text-align: center;
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    color: white;
+}
+
+.slick-dots li button:before {
+    color: white;
 }

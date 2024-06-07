@@ -1,36 +1,67 @@
+/* Landing.css */
 .landing-page {
     position: relative;
     text-align: center;
-    padding: 50px;
+    padding: 20px 50px; /* Reduce padding to bring content closer to the top */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    background: linear-gradient(180deg, #4A0072 0%, #00BFFF 100%); /* Gradient background */
+}
+
+.landing-page h1 {
+    font-size: 2.5em;
+    margin: 10px 0; /* Reduce margin to move text closer to the top */
+    color: #ffffff;
+}
+
+.landing-page p {
+    font-size: 1.2em;
+    margin: 10px 0 20px; /* Reduce margin to bring text closer to the top */
+    color: #ffffff;
 }
 
 .grid-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the items horizontally */
-    gap: 40px; /* Space between grid items */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between grid items */
+    width: 100%;
+    max-width: 1200px; /* Ensure the container doesn't get too wide */
+    margin-top: 20px; /* Move the grid container slightly down to create space */
 }
 
 .grid-item {
-    height:60% ;
-    width: 80%; /* Adjust width as needed, for example 80% of the parent width */
-    max-width: 400px; /* Set a max width to prevent it from becoming too wide */
-    background-color: rgba(0, 115, 230, 0.8); /* Accessible blue color */
+    flex: 1;
+    min-width: 280px; /* Set a minimum width to maintain a consistent layout */
+    max-width: 350px; /* Ensure the items don’t become too wide */
+    background: rgba(0, 115, 230, 0.8); /* Accessible blue color */
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     cursor: pointer;
-    border: 1px solid white; /* Optional: to create a visual separation */
-    border-radius: 10px 10px 10px 10px;
-    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center;
 }
 
 .grid-item:hover {
-    background-color: rgba(0, 115, 230, 1); /* Darker blue on hover */
+    background: rgba(0, 115, 230, 1); /* Darker blue on hover */
+    transform: translateY(-5px); /* Lift the element slightly */
 }
 
 .grid-item h2 {
     margin: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.grid-item:active {
+    transform: translateY(0); /* Return to original position when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow when clicked */
 }

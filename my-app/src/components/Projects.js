@@ -1,5 +1,8 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './Projects.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const projects = [
     {
@@ -15,14 +18,14 @@ const projects = [
         icon: 'fas fa-laptop-code'
     },
     {
-      title:'Image Classification Project',
-      Description:'bloop' ,
-      link: '',
-       icon: 'fas fa-laptop-code'
+        title: 'Image Classification Project',
+        description: 'Image classification using deep learning.',
+        link: '',
+        icon: 'fas fa-laptop-code'
     },
     {
-        title:'My Portfolio',
-        Description:'Portfolio created using React' ,
+        title: 'My Portfolio',
+        description: 'Portfolio created using React.',
         link: '',
         icon: 'fas fa-laptop-code'
     }
@@ -30,20 +33,39 @@ const projects = [
 ];
 
 function Projects() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    };
+
     return (
         <div className="projects-container">
-
             <div className="content-wrapper">
                 <section id="projects" className="projects-section">
-                    <h2 id='proj-header'>Projects</h2>
-                    {projects.map((project, index) => (
-                        <div key={index} className="project">
-                            <i className={project.icon}></i>
-                            <h3 className="project-title">{project.title}</h3>
-                            <p className='proj-para'>{project.description}</p>
-                            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-                        </div>
-                    ))}
+                    <h2 id="proj-header">Feel free to check out my Projects!</h2>
+                    <Slider {...settings} className="carousel">
+                        {projects.map((project, index) => (
+                            <div key={index} className="project-slide">
+                                <div className="project">
+                                    <i className={project.icon}></i>
+                                    <h3 className="project-title">{project.title}</h3>
+                                    <p>{project.description}</p>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
                 </section>
             </div>
         </div>
@@ -51,4 +73,3 @@ function Projects() {
 }
 
 export default Projects;
-
