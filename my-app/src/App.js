@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Landing from './components/Landing';
@@ -16,16 +16,18 @@ function App() {
     };
 
     return (
-        <div className="App">
-            <Header toggleSidebar={toggleSidebar} />
-            <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-            <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/introduction" element={<Introduction />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<ContactInfo />} />
-            </Routes>
-        </div>
+        <Router basename={process.env.PUBLIC_URL}>
+            <div className="App">
+                <Header toggleSidebar={toggleSidebar} />
+                <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+                <Routes>
+                    <Route path="/" element={<Landing />} />
+                    <Route path="/introduction" element={<Introduction />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<ContactInfo />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
