@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
-    <Router>
+    <Router basename="/PortfolioV2">
         <App />
     </Router>,
     document.getElementById('root')
