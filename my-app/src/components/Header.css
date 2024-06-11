@@ -21,7 +21,7 @@
     outline: none;
 }
 
-.home-btn {
+.initials {
     color: white;
     font-size: 24px;
     text-decoration: none;
@@ -30,6 +30,6 @@
     margin-right: 20px; /* Adjust this to position it on the right */
 }
 
-.home-btn:hover {
+.initials:hover {
     color: #ccc; /* Lighter color on hover */
 }

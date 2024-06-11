@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Not Found</title>
-  <meta http-equiv="refresh" content="0; URL=/" />
   <script>
-    // This script will redirect the user to the correct route
-    var pathname = window.location.pathname.replace(/^\/PortfolioV2/, '');
-    window.location.replace(window.location.origin + '/PortfolioV2' + pathname);
+    var pathname = window.location.pathname;
+
+    // Prevent infinite redirection loop
+    if (!pathname.startsWith('/PortfolioV2')) {
+      var newPathname = '/PortfolioV2' + pathname;
+      window.location.replace(newPathname);
+    } else {
+      // If it already starts with /PortfolioV2, redirect to base
+      window.location.replace('/PortfolioV2');
+    }
   </script>
 </head>
 <body>
