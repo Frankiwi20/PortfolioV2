@@ -6,7 +6,7 @@
   <meta http-equiv="refresh" content="0; URL=/" />
   <script>
     // This script will redirect the user to the correct route
-    var pathname = window.location.pathname;
+    var pathname = window.location.pathname.replace(/^\/PortfolioV2/, '');
     window.location.replace(window.location.origin + '/PortfolioV2' + pathname);
   </script>
 </head>
