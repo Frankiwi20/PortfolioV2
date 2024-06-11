@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Page Not Found</title>
   <script>
-    // This script will redirect the user to the correct route
     var pathname = window.location.pathname;
 
-    // Ensure the pathname does not end up in an infinite loop
+    // Prevent infinite redirection loop
     if (!pathname.startsWith('/PortfolioV2')) {
       var newPathname = '/PortfolioV2' + pathname;
-      window.location.replace(window.location.origin + newPathname);
+      window.location.replace(newPathname);
+    } else {
+      // If it already starts with /PortfolioV2, redirect to base
+      window.location.replace('/PortfolioV2');
     }
   </script>
 </head>
