@@ -41,3 +41,35 @@
     background: rgba(74, 0, 114, 0.5); /* Dark purple with opacity for better contrast */
     color: #fff; /* Ensures text remains readable */
 }
+
+/* Media queries */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar nav a {
+        padding: 10px;
+    }
+
+    .sidebar .close-btn {
+        font-size: 20px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .sidebar {
+        width: 50%;
+    }
+
+    .sidebar nav a {
+        padding: 12px;
+    }
+
+    .sidebar .close-btn {
+        font-size: 22px;
+    }
+}

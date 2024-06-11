@@ -120,3 +120,117 @@ h1, h2, h3 {
     font-size: 18px;
     font-family: Roboto;
 }
+
+/* Media queries */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .projects-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .proj-background {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .projects-section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #proj-header {
+        font-size: 40px;
+    }
+
+    .proj-para {
+        font-size: 16px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .projects-container {
+        padding: 20px;
+    }
+
+    .proj-background {
+        width: 90%;
+        height: auto;
+    }
+
+    .content-wrapper {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .projects-section {
+        padding: 30px;
+        margin: 15px;
+    }
+
+    .project {
+        width: 45%;
+        height: auto;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    #proj-header {
+        font-size: 60px;
+    }
+
+    .proj-para {
+        font-size: 17px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .projects-container {
+        padding: 30px;
+    }
+
+    .proj-background {
+        width: 80%;
+        height: auto;
+    }
+
+    .content-wrapper {
+        padding: 30px;
+        max-width: 80%;
+    }
+
+    .projects-section {
+        padding: 50px;
+        margin: 20px;
+    }
+
+    .project {
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #proj-header {
+        font-size: 80px;
+    }
+
+    .proj-para {
+        font-size: 18px;
+    }
+}

@@ -6,8 +6,8 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increase box shadow for more depth */
     max-width: 800px; /* Increase max-width for a larger container */
     min-width: 400px; /* Ensure the container doesn’t get too small */
-    max-height:1000px;
-    min-height:600px;
+    max-height: 1000px;
+    min-height: 600px;
     text-align: left;
 }
 
@@ -36,7 +36,6 @@
 .contact-item span {
     font-weight: bold; /* Bold labels for emphasis */
     color: white;
-
 }
 
 .contact-item a {
@@ -49,11 +48,60 @@
     color: #003366; /* Even Darker Blue */
     text-decoration: underline;
 }
-.contact-para{
-    color:white;
-    font-size:25px;
-    font-family:Roboto;
+
+.contact-para {
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
 }
-.contact-header{
-    font-size:40px;
+
+.contact-header {
+    font-size: 40px;
+}
+
+/* Media queries */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .contact-para {
+        font-size: 20px;
+    }
+
+    .contact-header {
+        font-size: 30px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contact-container {
+        padding: 25px;
+        margin: 30px auto;
+        max-width: 90%;
+    }
+
+    .contact-item {
+        padding: 25px;
+    }
+
+    .contact-para {
+        font-size: 23px;
+    }
+
+    .contact-header {
+        font-size: 35px;
+    }
 }
