@@ -8,7 +8,7 @@
     var pathname = window.location.pathname;
 
     // Ensure the pathname does not end up in an infinite loop
-    if (!pathname.includes('/PortfolioV2/')) {
+    if (!pathname.startsWith('/PortfolioV2')) {
       var newPathname = '/PortfolioV2' + pathname;
       window.location.replace(window.location.origin + newPathname);
     }
