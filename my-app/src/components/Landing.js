@@ -24,9 +24,14 @@ function Landing() {
                     <h2>Get in Touch!</h2>
                 </div>
             </div>
+            <div className="dot dot1"></div>
+            <div className="dot dot2"></div>
+            <div className="dot dot3"></div>
+            <div className="dot dot4"></div>
+            <div className="dot dot5"></div>
+            <div className="dot dot6"></div>
         </div>
     );
 }
 
 export default Landing;
-
