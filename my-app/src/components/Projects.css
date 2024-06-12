@@ -24,8 +24,6 @@ html, body {
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     position: relative;
     z-index: 1; /* Ensure the content is above the background image */
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to improve readability */
-    border-radius: 10px; /* Optional: rounded corners */
 }
 
 .projects-section {
@@ -67,7 +65,7 @@ html, body {
     border: 1px solid #ddd;
     padding: 20px;
     background: linear-gradient(19deg, rgba(74, 0, 114, 0.5), rgba(33, 212, 253, 0.5)); /* Reversed gradient with darker purple */
-    color: white;
+    color: #ffffff; /* White text for better contrast */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px; /* Fixed width for consistency */
@@ -81,7 +79,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.8; /* Adjust transparency */
+    background-color: rgba(0, 0, 0, 0.2); /* Add semi-transparent background to improve text readability */
 }
 
 .project i,
@@ -90,17 +88,19 @@ html, body {
 .project a {
     position: relative;
     z-index: 1;
+    color: #ffffff; /* Bright white text for better contrast */
+    font-weight:bold;
 }
 
 .project-title {
     font-weight: bold;
     font-size: 1.4em;
     margin-bottom: 10px;
-    color: #fff; /* White text for better contrast */
 }
 
 .project p {
-    color: #fff; /* White text for better contrast */
+    color: #ffffff; /* Bright white text for better contrast */
+    font-weight:bolder;
 }
 
 .project a {
@@ -116,17 +116,48 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     margin: 20px 0;
     color: white;
+    font-weight:bold;
 }
 
 #proj-header {
-    color: white;
     font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+    color: white; /* Change text color to white */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
 }
+
+#proj-header::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 5px;
+    background: linear-gradient(19deg, #4A0072, #00BFFF);
+    margin: 10px auto 0;
+    border-radius: 5px;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+
+
 
 .proj-para {
     color: white;
     font-size: 18px;
     font-family: Roboto;
+    font-weight:bold;
 }
 
 /* Media queries */
@@ -162,6 +193,7 @@ h1, h2, h3 {
 
     #proj-header {
         font-size: 40px;
+
     }
 
     .proj-para {
@@ -199,6 +231,8 @@ h1, h2, h3 {
 
     #proj-header {
         font-size: 60px;
+
+
     }
 
     .proj-para {
