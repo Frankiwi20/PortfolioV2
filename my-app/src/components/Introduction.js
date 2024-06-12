@@ -8,7 +8,7 @@ function Introduction() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -17,9 +17,11 @@ function Introduction() {
     };
 
     const images = [
-        '/Screenshot_20240531_173935_Gallery.jpg',
-        '/image2.jpg',
-        '/image3.jpg'
+        `${process.env.PUBLIC_URL}/Screenshot_20240531_173935_Gallery.jpg`,
+        `${process.env.PUBLIC_URL}/FB_IMG_1706762151564.jpg`,
+        `${process.env.PUBLIC_URL}/IMG-20240518-WA0013.jpg`,
+        /*`${process.env.PUBLIC_URL}/image3.jpg`,*/
+
         // Add more image paths as needed
     ];
 
