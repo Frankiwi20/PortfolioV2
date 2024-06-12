@@ -57,7 +57,7 @@ function Projects() {
                     <Slider {...settings} className="carousel">
                         {projects.map((project, index) => (
                             <div key={index} className="project-slide">
-                                <div className="project">
+                                <div className="project" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Untitled-design.jpg)` }}>
                                     <i className={project.icon}></i>
                                     <h3 className="project-title">{project.title}</h3>
                                     <p>{project.description}</p>
