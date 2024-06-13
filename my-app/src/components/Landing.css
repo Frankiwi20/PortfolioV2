@@ -6,10 +6,11 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Align items to the top */
     align-items: center;
     background: linear-gradient(180deg, #4A0072 0%, #00BFFF 100%);
     overflow: hidden; /* Hide overflow to prevent scrollbars */
+    padding-top: 15vh; /* Add padding to move content down slightly */
 }
 
 .landing-page h1 {
@@ -105,4 +106,4 @@
 .dot3 { width: 10px; height: 10px; top: 40%; left: 50%; animation-delay: 1s; }
 .dot4 { width: 25px; height: 25px; top: 10%; left: 80%; animation-delay: 3s; }
 .dot5 { width: 18px; height: 18px; top: 70%; left: 30%; animation-delay: 1.5s; }
-.dot6 { width: 15px; height:5px; top:80%; left:10%; animation-delay: 2.5s;}
+.dot6 { width: 17px; height:17px; top:80%; left:10%; animation-delay: 2.5s;}
