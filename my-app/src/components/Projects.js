@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const projects = [
     {
         title: 'Smart Farming Project',
-        description: 'This is version 2 of my smart farming project.',
+        description: '\'Enhanced smart farming project with improved features and machine learning integration.\'\n',
         link: 'https://github.com/Frankiwi20/Smart-Farming-V2',
         icon: 'fas fa-code'
     },
@@ -19,15 +19,24 @@ const projects = [
     },
     {
         title: 'Image Classification Project',
-        description: 'Image classification using deep learning.',
-        link: '',
+        description: '\'Advanced image classification using deep learning techniques.\'\n',
+        link: 'https://github.com/Frankiwi20/Image-Classification',
         icon: 'fas fa-laptop-code'
     },
     {
         title: 'My Portfolio',
-        description: 'Portfolio created using React.',
-        link: '',
+        description: '\'Interactive portfolio built with React showcasing some of my projects and skills.\'\n',
+        link: 'https://github.com/Frankiwi20/Image-Classification',
         icon: 'fas fa-laptop-code'
+    },
+    {
+        title:'Ward-Anisotropic-BRDF-Implementation',
+        description:'This project implements the Ward Anisotropic BRDF, using a 2D Gaussian function to map angles ' +
+            'between the halfway vector and surface directions \\(u\\) and \\(v\\). It determines light reflection based on ' +
+            'viewing and lighting angles,' +
+            ' supporting roughness parameters in \\(u\\) and \\(v\\) to simulate anisotropic surface reflections.',
+        link:'https://github.com/Frankiwi20/Ward-Anisotropic-BRDF-Implementation',
+        icon:'fas fa-laptop-code'
     }
     // Add more projects as needed
 ];
