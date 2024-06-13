@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .contact-container {
     padding: 30px; /* Increase padding for a more spacious feel */
     margin: 40px auto; /* Increase margin for more space around the container */
@@ -9,11 +14,30 @@
     max-height: 1000px;
     min-height: 600px;
     text-align: left;
+    animation: fadeIn 2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .contact-container h2 {
     margin-top: 0;
     text-align: center; /* Center the header */
+    font-size: 40px;
+    position: relative;
+}
+
+.contact-container h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 5px;
+    background: linear-gradient(19deg, #4A0072, #00BFFF);
+    margin: 10px auto 0;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .contact-container p {
