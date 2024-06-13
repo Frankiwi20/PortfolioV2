@@ -31,10 +31,7 @@ const projects = [
     },
     {
         title:'Ward-Anisotropic-BRDF-Implementation',
-        description:'This project implements the Ward Anisotropic BRDF, using a 2D Gaussian function to map angles ' +
-            'between the halfway vector and surface directions \\(u\\) and \\(v\\). It determines light reflection based on ' +
-            'viewing and lighting angles,' +
-            ' supporting roughness parameters in \\(u\\) and \\(v\\) to simulate anisotropic surface reflections.',
+        description:'Ward Anisotropic BRDF, mapping light reflection based on angles and surface roughness in \\(u\\) and \\(v\\) directions to simulate anisotropic reflections.',
         link:'https://github.com/Frankiwi20/Ward-Anisotropic-BRDF-Implementation',
         icon:'fas fa-laptop-code'
     }
